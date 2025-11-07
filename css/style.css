@@ -43,7 +43,7 @@
 
 
 
-/* Základní styly pro menu */
+
 .menu {
     display: flex;
     justify-content: center;
@@ -56,35 +56,35 @@
     font-size: 25px;
     transition: underline 500ms;
     
-    flex-wrap: wrap; /* umožní zalamování položek při menších obrazovkách */
+    flex-wrap: wrap; 
 }
 
 
 
 .menu a {
-    position: relative; /* nutné pro pseudo-element */
+    position: relative; 
     text-decoration: none;
     color: black;
 }
 
-/* Přidání "animovaného" podtržítka */
+
 .menu a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px; /* vzdálenost pod text */
-    width: 0%; /* začíná neviditelné */
+    bottom: -5px; 
+    width: 0%; 
     height: 2px;
     background-color: black;
-    transition: width 0.3s ease-in-out; /* plynulá animace */
+    transition: width 0.3s ease-in-out; 
 }
 
 .menu a:hover::after {
-    width: 100%; /* při hover se podtržítko "roztáhne" */
+    width: 100%; 
 }
 
 
-/* Logo a obrázky */
+
 .logon {
     width: 50px;
     margin-right: 50px;
@@ -99,7 +99,7 @@
     color: black;
 }
 
-/* Responzivní úpravy */
+
 @media (max-width: 1024px) {
     .menu {
         gap: 40px;
@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
     .menu {
-        flex-direction: column; /* menu se poskládá vertikálně */
+        flex-direction: column; 
         gap: 20px;
         height: auto;
     
