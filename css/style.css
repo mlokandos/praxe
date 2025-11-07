@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer div {
+    margin: 10px;
+    max-width: 250px;
+}
+
+.footer-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+
+/* Základní styly pro menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    width: 100%;
+    height: 90px;
+    border-bottom: 2px solid;
+    font-size: 25px;
+    transition: underline 500ms;
+    
+    flex-wrap: wrap; /* umožní zalamování položek při menších obrazovkách */
+}
+
+
+
+.menu a {
+    position: relative; /* nutné pro pseudo-element */
+    text-decoration: none;
+    color: black;
+}
+
+/* Přidání "animovaného" podtržítka */
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* vzdálenost pod text */
+    width: 0%; /* začíná neviditelné */
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out; /* plynulá animace */
+}
+
+.menu a:hover::after {
+    width: 100%; /* při hover se podtržítko "roztáhne" */
+}
+
+
+/* Logo a obrázky */
+.logon {
+    width: 50px;
+    margin-right: 50px;
+}
+
+.logo {
+    padding-right: 300px;
+}
+
+.menu  {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responzivní úpravy */
+@media (max-width: 1024px) {
+    .menu {
+        gap: 40px;
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    .logo {
+        padding-right: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* menu se poskládá vertikálně */
+        gap: 20px;
+        height: auto;
+    
+    }
+    .logo {
+        padding-right: 0;
+    }
+    .logon {
+        margin-right: 0;
+        width: 80px;
+        padding-right: 20px;
+       
+    }
+    .menu a {
+        font-size: 18px;
+    }
+}
