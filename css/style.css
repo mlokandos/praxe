@@ -1021,62 +1021,84 @@ body,html{
 /* === Produkty grid === */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  padding: 40px 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  justify-items: center;
 }
 
+/* Karta produktu */
 .product {
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 280px;
+  height: 100%;
 }
 
 .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Obrázek produktu */
 .product img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 1 / 1;   /* všechny obrázky ve stejném poměru */
+  object-fit: cover;     /* vyplní prostor, nic neusekne */
+  display: block;
 }
 
+/* Textová část */
 .product-content {
-  padding: 15px;
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .product-content h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 6px;
 }
 
 .product-content p {
-  font-size: 14px;
-  color: #555;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  min-height: 45px;
 }
 
 .price {
   font-weight: bold;
-  margin: 8px 0;
+  color: #ff6600;
+  margin-bottom: 10px;
 }
 
 .add-btn {
-  background: #f04e30;
-  color: #fff;
+  padding: 8px 14px;
+  background-color: #ff8c00;
+  color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background-color 0.2s ease;
+  align-self: flex-start;
 }
 
 .add-btn:hover {
-  background: #d93b20;
+  background-color: #ff6600;
 }
+
 /* === FILTRY === */
 .filters {
   display: flex;
@@ -1529,3 +1551,4 @@ body,html{
 .btn-go-cart:hover {
   background: #e0494d;
 }
+

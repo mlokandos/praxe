@@ -1,15 +1,17 @@
 // ===== DATA: produkty (full list) =====
+
 const produkty = [
-  { nazev: "Čokoládový shake", kategorie: "mlecny", cena: 79, img: "https://images.unsplash.com/photo-1605712448686-25c9b0f7c87f?auto=format&fit=crop&w=600&q=80", popis: "Krémový shake s pravou belgickou čokoládou." },
-  { nazev: "Vanilkový protein", kategorie: "proteinovy", cena: 99, img: "https://images.unsplash.com/photo-1590080875832-0c8ddee5cde0?auto=format&fit=crop&w=600&q=80", popis: "Proteinový shake s jemnou chutí vanilky." },
-  { nazev: "Jahodový shake", kategorie: "ovocny", cena: 69, img: "https://images.unsplash.com/photo-1589187155479-093d3a5b0a9d?auto=format&fit=crop&w=600&q=80", popis: "Osvěžující jahodový shake z čerstvých plodů." },
-  { nazev: "Karamelový sen", kategorie: "mlecny", cena: 89, img: "https://images.unsplash.com/photo-1603808033192-3c847b3cde68?auto=format&fit=crop&w=600&q=80", popis: "Sladký karamel v krémovém provedení." },
-  { nazev: "Kokosové potěšení", kategorie: "vegan", cena: 85, img: "https://images.unsplash.com/photo-1565958011705-44a8e5d4b6a6?auto=format&fit=crop&w=600&q=80", popis: "Vegan shake s kokosovým mlékem." },
-  { nazev: "Matcha power", kategorie: "vegan", cena: 95, img: "https://images.unsplash.com/photo-1607083206173-ea57d70b2f77?auto=format&fit=crop&w=600&q=80", popis: "Zelená energie z pravé japonské matchy." },
-  { nazev: "Banánový sen", kategorie: "ovocny", cena: 75, img: "https://images.unsplash.com/photo-1601152157582-3b6f7f9c24f3?auto=format&fit=crop&w=600&q=80", popis: "Krémový banánový shake s trochou medu." },
-  { nazev: "Borůvková bomba", kategorie: "ovocny", cena: 82, img: "https://images.unsplash.com/photo-1565958011705-44a8e5d4b6a6?auto=format&fit=crop&w=600&q=80", popis: "Borůvkový shake plný antioxidantů." },
-  { nazev: "Protein cookie", kategorie: "proteinovy", cena: 89, img: "https://images.unsplash.com/photo-1613460777563-1e7a4fbe3f27?auto=format&fit=crop&w=600&q=80", popis: "Proteinový shake s příchutí cookie." }
+  { nazev: "Čokoládový shake", kategorie: "mlecny", cena: 79, img: "/praxee/images/krem.png", popis: "Krémový shake s pravou belgickou čokoládou." },
+  { nazev: "Vanilkový protein", kategorie: "proteinovy", cena: 99, img: "/praxee/images/vanil.jpg", popis: "Proteinový shake s jemnou chutí vanilky." },
+  { nazev: "Jahodový shake", kategorie: "ovocny", cena: 69, img: "/praxee/images/jahoda.png", popis: "Osvěžující jahodový shake z čerstvých plodů." },
+  { nazev: "Karamelový sen", kategorie: "mlecny", cena: 89, img: "/praxee/images/karamel.png", popis: "Sladký karamel v krémovém provedení." },
+  { nazev: "Kokosové potěšení", kategorie: "vegan", cena: 85, img: "/praxee/images/vegancoconut.png", popis: "Vegan shake s kokosovým mlékem." },
+  { nazev: "Matcha power", kategorie: "vegan", cena: 95, img: "/praxee/images/matcha.png", popis: "Zelená energie z pravé japonské matchy." },
+  { nazev: "Banánový sen", kategorie: "ovocny", cena: 75, img: "/praxee/images/banan.png", popis: "Krémový banánový shake s trochou medu." },
+  { nazev: "Borůvková bomba", kategorie: "ovocny", cena: 82, img: "/praxee/images/boruvka.png", popis: "Borůvkový shake plný antioxidantů." },
+  { nazev: "Protein cookie", kategorie: "proteinovy", cena: 89, img: "/praxee/images/protein.png", popis: "Proteinový shake s příchutí cookie." }
 ];
+
 
 // ===== KOŠÍK: util =====
 const getCart = () => JSON.parse(localStorage.getItem("cart")) || [];
