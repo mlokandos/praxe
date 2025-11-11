@@ -56,6 +56,8 @@
     }, 2000);
   </script>
 
+    <script src="script.js"></script>
+
 <?php include "includes/footer.php" ?>
 
 

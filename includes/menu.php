@@ -1,58 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ŠejkSpír</title>
 </head>
 <body>
-
-  
+<header>
   <nav class="navbar">
-   <div class="nav-logo">
-    <a href="index.php">
-      <img src="images/logo.jpg" alt="Logo" class="logo-img">
-    </a>
-  </div>
+    <div class="nav-logo">
+      <a href="index.php"><img src="images/logo.jpg" alt="Logo" class="logo-img"></a>
+    </div>
 
-  <!-- Hamburger -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.php">Hlavní stránka</a></li>
+      <li><a href="produkty.php">Produkty</a></li>
+      <li><a href="onas.php">O nás</a></li>
+      <li><a href="kontakt.php">Kontakt</a></li>
+    </ul>
 
-  <ul class="nav-links" id="nav-links">
-    <li><a href="produkty.php" class="active">Produkty</a></li>
-    <li><a href="onas.php">O nás</a></li>
-    <li><a href="kontakt.php">Kontakt</a></li>
-  </ul>
-</nav>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
+    <!-- CART + container (důležité IDs / classy) -->
+    <div id="cart-container" class="cart-wrapper">
+      <a id="cart-link" class="cart-icon" href="cart.php" aria-label="Košík">
+        🛒 <span id="cart-count">0</span>
+      </a>
+      <div id="cart-dropdown" class="cart-dropdown" aria-hidden="true"></div>
+    </div>
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    hamburger.classList.toggle('active');
-  });
-
-  // Aktivní odkaz podle URL
-  const links = document.querySelectorAll('.nav-links li a');
-  const currentPath = window.location.pathname.split('/').pop() || 'index.php';
-
-  links.forEach(link => {
-    if(link.getAttribute('href') === currentPath) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-</script>
-
-
-
-
-
+    <button class="hamburger" id="hamburger" aria-label="Otevřít menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+</header>
