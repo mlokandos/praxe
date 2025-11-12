@@ -1,16 +1,33 @@
 // ===== DATA: produkty (full list) =====
 
 const produkty = [
-  { nazev: "Čokoládový shake", kategorie: "mlecny", cena: 79, img: "/praxee/images/krem.png", popis: "Krémový shake s pravou belgickou čokoládou." },
-  { nazev: "Vanilkový protein", kategorie: "proteinovy", cena: 99, img: "/praxee/images/vanil.jpg", popis: "Proteinový shake s jemnou chutí vanilky." },
-  { nazev: "Jahodový shake", kategorie: "ovocny", cena: 69, img: "/praxee/images/jahoda.png", popis: "Osvěžující jahodový shake z čerstvých plodů." },
-  { nazev: "Karamelový sen", kategorie: "mlecny", cena: 89, img: "/praxee/images/karamel.png", popis: "Sladký karamel v krémovém provedení." },
-  { nazev: "Kokosové potěšení", kategorie: "vegan", cena: 85, img: "/praxee/images/vegancoconut.png", popis: "Vegan shake s kokosovým mlékem." },
-  { nazev: "Matcha power", kategorie: "vegan", cena: 95, img: "/praxee/images/matcha.png", popis: "Zelená energie z pravé japonské matchy." },
-  { nazev: "Banánový sen", kategorie: "ovocny", cena: 75, img: "/praxee/images/banan.png", popis: "Krémový banánový shake s trochou medu." },
-  { nazev: "Borůvková bomba", kategorie: "ovocny", cena: 82, img: "/praxee/images/boruvka.png", popis: "Borůvkový shake plný antioxidantů." },
-  { nazev: "Protein cookie", kategorie: "proteinovy", cena: 89, img: "/praxee/images/protein.png", popis: "Proteinový shake s příchutí cookie." }
+  // === OVOCNÉ SHAKY – LETNÍ SONETY ===
+  { nazev: "Sonet o mangu", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/sonet_o_mangu.png", popis: "Mango, kokosové mléko, ananas." },
+  { nazev: "Růžová Julie", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/ruzvova_julie.png", popis: "Jahody, maliny, růžová voda, mandlové mléko." },
+  { nazev: "Zelený princ", kategorie: "letni", cena: 85, img: "/praxee/images/produkty/zeleny_princ.png", popis: "Špenát, banán, jablko, kiwi, limetka." },
+  { nazev: "Letní sen", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/letni_sen.png", popis: "Broskev, marakuja, pomerančový džus." },
+  { nazev: "Tropická bouře", kategorie: "letni", cena: 95, img: "/praxee/images/produkty/tropicka_boure.png", popis: "Mango, banán, kokos, ananas, chia." },
+
+  // === PROTEINOVÉ SHAKY – SÍLA HAMLETA ===
+  { nazev: "Hamletův hněv", kategorie: "hamlet", cena: 105, img: "/praxee/images/produkty/hamletuv_hnev.png", popis: "Čokoláda, arašídové máslo, protein, ovesné mléko." },
+  { nazev: "Macbeth Mass", kategorie: "hamlet", cena: 105, img: "/praxee/images/produkty/macbeth_mass.png", popis: "Banán, datle, vanilkový protein, skořice." },
+  { nazev: "Othellův ořech", kategorie: "hamlet", cena: 109, img: "/praxee/images/produkty/othelluv_orech.jpg", popis: "Lískový ořech, kakao, protein, rýžové mléko." },
+  { nazev: "Romeovo ráno", kategorie: "hamlet", cena: 99, img: "/praxee/images/produkty/romeovo_rano.jpg", popis: "Jahoda, vanilka, řecký jogurt, med." },
+  { nazev: "Shakes-gain", kategorie: "hamlet", cena: 109, img: "/praxee/images/produkty/shakes-gain.jpg", popis: "Cookies & cream protein, mandlové mléko, banán." },
+
+  // === DEZERTNÍ SHAKY – SLADKÉ DRAMA ===
+  { nazev: "Sen noci čokoládové", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/sen_noci_cokoladove.png", popis: "Čokoláda, smetana, kokos." },
+  { nazev: "Karamelová tragédie", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/karamelova_tragedie.png", popis: "Slaný karamel, banán, mléko." },
+  { nazev: "Medový sen", kategorie: "sladke", cena: 92, img: "/praxee/images/produkty/medovy_sen.png", popis: "Med, vanilka, mandle, mléko." },
+  { nazev: "Láska na první lok", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/laska_na_prvni_lok.png", popis: "Jahody, bílá čokoláda, smetana." },
+
+  // === HEALTHY & VEGAN – ZDRAVÝ EPILOG ===
+  { nazev: "Veggie Verona", kategorie: "epilog", cena: 89, img: "/praxee/images/produkty/veggie_verona.png", popis: "Špenát, avokádo, jablko, citron." },
+  { nazev: "Bio Bard", kategorie: "epilog", cena: 92, img: "/praxee/images/produkty/bio_bard.png", popis: "Borůvky, mandlové mléko, chia semínka." },
+  { nazev: "Forest Flow", kategorie: "epilog", cena: 89, img: "/praxee/images/produkty/forest_flow.png", popis: "Lesní ovoce, kokosová voda, datle." },
+  { nazev: "Zen Shake", kategorie: "epilog", cena: 99, img: "/praxee/images/produkty/zen_shake.png", popis: "Matcha, kokos, banán, mandlové mléko." }
 ];
+
 
 
 // ===== KOŠÍK: util =====
@@ -291,32 +308,82 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- checkout summary ---
-  if (document.getElementById('order-form')) {
-    const cart = getCart();
-    const summaryList = document.getElementById('summary-items');
-    const totalEl = document.getElementById('summary-total');
-    if (!cart.length) {
-      summaryList.innerHTML = '<li>Košík je prázdný.</li>';
-      totalEl.textContent = '0 Kč';
-    } else {
-      let total = 0;
-      cart.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = `${item.nazev} × ${item.mnozstvi} — ${item.cena * item.mnozstvi} Kč`;
-        summaryList.appendChild(li);
-        total += item.cena * item.mnozstvi;
-      });
-      totalEl.textContent = total + ' Kč';
-    }
-    document.getElementById('order-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Objednávka odeslána! Děkujeme za nákup 🧡');
-      localStorage.removeItem('cart');
-      window.location.href = 'index.php';
+  // --- checkout summary ---
+if (document.getElementById('order-form')) {
+  const cart = getCart();
+  const summaryList = document.getElementById('summary-items');
+  const totalEl = document.getElementById('summary-total');
+  
+  if (!cart.length) {
+    summaryList.innerHTML = '<li>Košík je prázdný.</li>';
+    totalEl.textContent = '0 Kč';
+  } else {
+    let total = 0;
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.nazev} × ${item.mnozstvi} — ${item.cena * item.mnozstvi} Kč`;
+      summaryList.appendChild(li);
+      total += item.cena * item.mnozstvi;
     });
+    totalEl.textContent = total + ' Kč';
   }
+
+  // Před odesláním přidáme data z košíku
+  document.getElementById('order-form').addEventListener('submit', () => {
+    const cart = getCart();
+    document.getElementById('cartData').value = JSON.stringify(cart);
+    localStorage.removeItem('cart');
+    // ❌ NEpoužíváme preventDefault, aby se formulář normálně odeslal na PHP
+  });
+}
+
 
   // init UI
   updateCartCount();
   updateCartDropdown();
 });
+
+// Při odesílání formuláře přidej JSON z košíku do hidden inputu
+const orderForm = document.getElementById("order-form");
+if (orderForm) {
+  orderForm.addEventListener("submit", (e) => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    document.getElementById("cartData").value = JSON.stringify(cart);
+  });
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  const dotsContainer = document.querySelector(".dots");
+
+  if (!slides.length) return;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    if (i === 0) dot.classList.add("active");
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll("button");
+  let current = 0;
+
+  const changeSlide = (index) => {
+    slides[current].classList.remove("active");
+    dots[current].classList.remove("active");
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add("active");
+    dots[current].classList.add("active");
+  };
+
+  // Automatické přepínání
+  setInterval(() => changeSlide(current + 1), 5000);
+
+  // Kliknutí na tečku
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => changeSlide(i));
+  });
+});
+

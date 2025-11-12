@@ -9,9 +9,11 @@
 <body>
 <header>
   <nav class="navbar">
-    <div class="nav-logo">
-      <a href="index.php"><img src="images/logo.jpg" alt="Logo" class="logo-img"></a>
-    </div>
+  <div class="nav-logo">
+  <a href="index.php">
+    <img src="images/logo.jpg" alt="Logo ŠejkSpír" class="logo-img">
+  </a>
+</div>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="index.php">Hlavní stránka</a></li>

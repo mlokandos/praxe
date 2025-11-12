@@ -1,20 +1,19 @@
 <?php include "includes/menu.php"; ?>
 
 <main>
-  <section class="filters">
-    <button class="filter-btn active" data-filter="all">Všechny</button>
-    <button class="filter-btn" data-filter="mlecny">Mlěčné</button>
-    <button class="filter-btn" data-filter="ovocny">Ovocné</button>
-    <button class="filter-btn" data-filter="proteinovy">Proteinové</button>
-    <button class="filter-btn" data-filter="vegan">Vegan</button>
-  </section>
+<section class="filters">
+  <button class="filter-btn active" data-filter="all">Všechny</button>
+  <button class="filter-btn" data-filter="letni">Letní sonety</button>
+  <button class="filter-btn" data-filter="hamlet">Síla Hamleta</button>
+  <button class="filter-btn" data-filter="sladke">Sladké drama</button>
+  <button class="filter-btn" data-filter="epilog">Zdravý epilog</button>
+</section>
 
-  <section id="products" class="products">
-    <!-- Produkty generované z JS -->
-  </section>
+
+  <section id="products" class="products"></section>
 </main>
 
-<!-- === MODAL OKNO === -->
+<!-- === MODAL === -->
 <div id="product-modal" class="modal">
   <div class="modal-content">
     <span id="close-modal" class="close">&times;</span>
@@ -27,5 +26,4 @@
 </div>
 
 <script src="script.js"></script>
-
 <?php include "includes/footer.php"; ?>
