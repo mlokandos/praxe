@@ -355,35 +355,24 @@ if (orderForm) {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".slide");
-  const dotsContainer = document.querySelector(".dots");
-
-  if (!slides.length) return;
-
-  slides.forEach((_, i) => {
-    const dot = document.createElement("button");
-    if (i === 0) dot.classList.add("active");
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = dotsContainer.querySelectorAll("button");
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dots button');
   let current = 0;
 
-  const changeSlide = (index) => {
-    slides[current].classList.remove("active");
-    dots[current].classList.remove("active");
-    current = (index + slides.length) % slides.length;
-    slides[current].classList.add("active");
-    dots[current].classList.add("active");
-  };
+  function showSlide(index) {
+    slides.forEach((s, i) => {
+      s.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    current = index;
+  }
 
-  // Automatické přepínání
-  setInterval(() => changeSlide(current + 1), 5000);
-
-  // Kliknutí na tečku
   dots.forEach((dot, i) => {
-    dot.addEventListener("click", () => changeSlide(i));
+    dot.addEventListener('click', () => showSlide(i));
   });
-});
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 5000);
 

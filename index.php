@@ -1,62 +1,46 @@
 
-<!-- HERO SLIDER -->
 <?php include "includes/menu.php"; ?>
+
 
 <!-- HERO SLIDER -->
 <section class="hero">
   <div class="slider">
-
-    <!-- Sladké drama -->
     <div class="slide active">
-      <img src="images/produkty/karamelova_tragedie.png" alt="Karamelová tragédie">
+      <img src="images/produkty/sejk1.png" alt="Čerstvé suroviny">
       <div class="overlay"></div>
-      <div class="hero-text">
-        <span class="hero-tagline">Sladké drama</span>
-        <h1>Karamelová tragédie</h1>
-        <p>Sladká dráma s karamelovým koncem – shake, který rozbuší srdce i chuťové pohárky.</p>
-        <a href="produkty.php" class="btn-primary">Objev Sladké drama</a>
+      <div class="slide-text">
+        <h2>Objevte chutě, které vás nadchnou</h2>
+        <p>Pečlivě vybíráme jen ty nejlepší produkty pro vaši kuchyni.</p>
+        <a href="produkty.php" class="btn-primary">Zobrazit nabídku</a>
       </div>
     </div>
 
-    <!-- Letní sonety -->
     <div class="slide">
-      <img src="images/produkty/letni_sen.png" alt="Letní sen">
+      <img src="images/produkty/sejk2.png" alt="Kvalita a čerstvost">
       <div class="overlay"></div>
-      <div class="hero-text">
-        <span class="hero-tagline">Letní sonety</span>
-        <h1>Letní sen</h1>
-        <p>Maliny, broskve a dotek léta – poezie chuti v každém doušku.</p>
-        <a href="produkty.php" class="btn-primary">Objev Letní sonety</a>
+      <div class="slide-text">
+        <h2>Kvalita, kterou poznáte na první sousto</h2>
+        <p>Naše produkty pocházejí od ověřených dodavatelů.</p>
+        <a href="produkty.php" class="btn-primary">Nakupovat</a>
       </div>
     </div>
 
-    <!-- Síla Hamleta -->
     <div class="slide">
-      <img src="images/produkty/macbeth_mass.png" alt="Macbeth Mass">
+      <img src="images/produkty/sejk3.png" alt="Tradiční chutě">
       <div class="overlay"></div>
-      <div class="hero-text">
-        <span class="hero-tagline">Síla Hamleta</span>
-        <h1>Macbeth Mass</h1>
-        <p>Proteinový epos pro sílu, vytrvalost a ambice každodenních hrdinů.</p>
-        <a href="produkty.php" class="btn-primary">Na sílu shakespearovských hrdinů</a>
+      <div class="slide-text">
+        <h2>Tradiční chutě s moderním přístupem</h2>
+        <p>Inspirujte se naší sezónní nabídkou a vyzkoušejte něco nového.</p>
+        <a href="produkty.php" class="btn-primary">Prohlédnout produkty</a>
       </div>
     </div>
 
-    <!-- Zdravý epilog -->
-    <div class="slide">
-      <img src="images/produkty/zen_shake.png" alt="Zen Shake">
-      <div class="overlay"></div>
-      <div class="hero-text">
-        <span class="hero-tagline">Zdravý epilog</span>
-        <h1>Zen Shake</h1>
-        <p>Matcha, kokos a klid – shake, který zakončí každý den s harmonií.</p>
-        <a href="produkty.php" class="btn-primary">Objev Zdravý epilog</a>
-      </div>
+    <div class="dots">
+      <button class="active"></button>
+      <button></button>
+      <button></button>
     </div>
-
   </div>
-
-  <div class="dots"></div>
 </section>
 
 <!-- STYLING -->
