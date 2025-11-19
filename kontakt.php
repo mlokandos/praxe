@@ -1,6 +1,6 @@
 <?php include "includes/menu.php" ?>
 
-<!-- Úvod sekce -->
+
 <section class="contact-intro">
   <h1>Kontaktujte nás</h1>
   <p>
@@ -9,7 +9,7 @@
   </p>
 </section>
 
-<!-- Kontaktní informace -->
+
 <section class="contact-info">
   <div class="contact-grid">
 
@@ -67,6 +67,7 @@
     <button type="submit" class="submit-btn">Odeslat zprávu</button>
   </form>
 </section>
+
 <script src="script.js"></script>
 <?php include "includes/footer.php" ?>
 

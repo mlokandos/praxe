@@ -95,7 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       startAutoSlide();
     }
   });
-
   // Inicializace
   showSlide(0);
   startAutoSlide();

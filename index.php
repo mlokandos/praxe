@@ -2,7 +2,7 @@
 <?php include "includes/menu.php"; ?>
 
 
-<!-- HERO SLIDER -->
+
 <section class="hero">
   <div class="slider">
     <div class="slide active">
@@ -43,13 +43,13 @@
   </div>
 </section>
 
-<!-- STYLING -->
 
 
 
 
 
-<!-- SEKCE PRODUKTŮ -->
+
+
 <section class="products section">
   <div class="container">
     <h2>Naše nejoblíbenější shakes</h2>
@@ -101,14 +101,12 @@
 </section>
 
 
-<!-- SLOGAN SEKCE -->
 <section class="slogan-section">
   <div class="slogan-logo">
     <img width="100px" src="images/logofinal.png" alt="Logo">
   </div>
   <div class="slogan-text">„Každý shake má svůj příběh.“</div>
 </section>
-
 
 <script src="script.js"></script>
 <?php include "includes/footer.php"; ?>

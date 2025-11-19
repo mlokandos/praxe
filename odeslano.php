@@ -5,7 +5,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// ✅ OPRAVNÁ CESTA – pokud máš PHPMailer ve složce includes/
+
 require 'includes/PHPMailer/src/Exception.php';
 require 'includes/PHPMailer/src/PHPMailer.php';
 require 'includes/PHPMailer/src/SMTP.php';
@@ -13,7 +13,7 @@ require 'includes/PHPMailer/src/SMTP.php';
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 try {
-    // === NASTAVENÍ SMTP ===
+    
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
@@ -40,7 +40,7 @@ try {
         $total = 0;
 if ($cart) {
     foreach ($cart as $item) {
-        // Správné klíče podle JS objektu
+     
         $pname = htmlspecialchars($item['nazev'] ?? '');
         $price = floatval($item['cena'] ?? 0);
         $qty   = intval($item['mnozstvi'] ?? 0);
@@ -49,10 +49,8 @@ if ($cart) {
         $cartHtml .= "<tr><td>$pname</td><td>$price Kč</td><td>$qty ks</td></tr>";
     }
 }
-
         $cartHtml .= "<tr><td colspan='2' align='right'><strong>Celkem:</strong></td><td><strong>" . number_format($total, 2) . " Kč</strong></td></tr></table>";
 
-        // === EMAIL OBJEDNÁVKY ===
         $mail->setFrom('tvujemail@gmail.com', 'Objednávky ŠejkSpír');
         $mail->addAddress('sejkspir123@gmail.com');
         $mail->addReplyTo($email, $name);

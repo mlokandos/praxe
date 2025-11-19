@@ -53,7 +53,6 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
 </main>
 
 
-
 <script src="script.js"></script>
 
 <?php include "includes/footer.php" ?>

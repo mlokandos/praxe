@@ -1,6 +1,6 @@
 
 <?php include "includes/menu.php" ?>
-  <!-- Úvodní text -->
+
   <section class="about-intro">
     <h1>O nás</h1>
     <p>
@@ -9,7 +9,7 @@
     </p>
   </section>
 
-  <!-- Tým -->
+  
   <section class="about-team">
     <h2>Náš tým</h2>
     <div class="team-grid">
@@ -69,7 +69,6 @@
         <h3>Matyáš Konvalinka</h3>
         <p>Marketing & komunikace</p>
       </div>
-
     </div>
   </section>
 

@@ -13,7 +13,7 @@
   <section id="products" class="products"></section>
 </main>
 
-<!-- === MODAL === -->
+
 <div id="product-modal" class="modal">
   <div class="modal-content">
     <span id="close-modal" class="close">&times;</span>

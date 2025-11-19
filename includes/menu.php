@@ -21,8 +21,7 @@
       <li><a href="onas.php">O nás</a></li>
       <li><a href="kontakt.php">Kontakt</a></li>
     </ul>
-
-    <!-- CART + container (důležité IDs / classy) -->
+    
     <div id="cart-container" class="cart-wrapper">
       <a id="cart-link" class="cart-icon" href="cart.php" aria-label="Košík">
         🛒 <span id="cart-count">0</span>
