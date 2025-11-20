@@ -2,30 +2,30 @@
 
 const produkty = [
   // === OVOCNÉ SHAKY – LETNÍ SONETY ===
-  { nazev: "Sonet o mangu", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/sonet_o_mangu.png", popis: "Mango, kokosové mléko, ananas." },
-  { nazev: "Růžová Julie", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/ruzvova_julie.png", popis: "Jahody, maliny, růžová voda, mandlové mléko." },
-  { nazev: "Zelený princ", kategorie: "letni", cena: 85, img: "/praxee/images/produkty/zeleny_princ.png", popis: "Špenát, banán, jablko, kiwi, limetka." },
-  { nazev: "Letní sen", kategorie: "letni", cena: 89, img: "/praxee/images/produkty/letni_sen.png", popis: "Broskev, marakuja, pomerančový džus." },
-  { nazev: "Tropická bouře", kategorie: "letni", cena: 95, img: "/praxee/images/produkty/tropicka_boure.png", popis: "Mango, banán, kokos, ananas, chia." },
+  { nazev: "Sonet o mangu", kategorie: "letni", cena: 89, img: "images/produkty/sonet_o_mangu.png", popis: "Mango, kokosové mléko, ananas." },
+  { nazev: "Růžová Julie", kategorie: "letni", cena: 89, img: "images/produkty/ruzvova_julie.png", popis: "Jahody, maliny, růžová voda, mandlové mléko." },
+  { nazev: "Zelený princ", kategorie: "letni", cena: 85, img: "images/produkty/zeleny_princ.png", popis: "Špenát, banán, jablko, kiwi, limetka." },
+  { nazev: "Letní sen", kategorie: "letni", cena: 89, img: "images/produkty/letni_sen.png", popis: "Broskev, marakuja, pomerančový džus." },
+  { nazev: "Tropická bouře", kategorie: "letni", cena: 95, img: "images/produkty/tropicka_boure.png", popis: "Mango, banán, kokos, ananas, chia." },
 
   // === PROTEINOVÉ SHAKY – SÍLA HAMLETA ===
-  { nazev: "Hamletův hněv", kategorie: "hamlet", cena: 105, img: "/praxee/images/produkty/hamletuv_hnev.png", popis: "Čokoláda, arašídové máslo, protein, ovesné mléko." },
-  { nazev: "Macbeth Mass", kategorie: "hamlet", cena: 105, img: "/praxee/images/produkty/macbeth_mass.png", popis: "Banán, datle, vanilkový protein, skořice." },
-  { nazev: "Othellův ořech", kategorie: "hamlet", cena: 109, img: "/praxee/images/produkty/othelluv_orech.jpg", popis: "Lískový ořech, kakao, protein, rýžové mléko." },
-  { nazev: "Romeovo ráno", kategorie: "hamlet", cena: 99, img: "/praxee/images/produkty/romeovo_rano.jpg", popis: "Jahoda, vanilka, řecký jogurt, med." },
-  { nazev: "Shakes-gain", kategorie: "hamlet", cena: 109, img: "/praxee/images/produkty/shakes-gain.jpg", popis: "Cookies & cream protein, mandlové mléko, banán." },
+  { nazev: "Hamletův hněv", kategorie: "hamlet", cena: 105, img: "images/produkty/hamletuv_hnev.png", popis: "Čokoláda, arašídové máslo, protein, ovesné mléko." },
+  { nazev: "Macbeth Mass", kategorie: "hamlet", cena: 105, img: "images/produkty/macbeth_mass.png", popis: "Banán, datle, vanilkový protein, skořice." },
+  { nazev: "Othellův ořech", kategorie: "hamlet", cena: 109, img: "images/produkty/othelluv_orech.jpg", popis: "Lískový ořech, kakao, protein, rýžové mléko." },
+  { nazev: "Romeovo ráno", kategorie: "hamlet", cena: 99, img: "images/produkty/romeovo_rano.jpg", popis: "Jahoda, vanilka, řecký jogurt, med." },
+  { nazev: "Shakes-gain", kategorie: "hamlet", cena: 109, img: "images/produkty/shakes-gain.jpg", popis: "Cookies & cream protein, mandlové mléko, banán." },
 
   // === DEZERTNÍ SHAKY – SLADKÉ DRAMA ===
-  { nazev: "Sen noci čokoládové", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/sen_noci_cokoladove.png", popis: "Čokoláda, smetana, kokos." },
-  { nazev: "Karamelová tragédie", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/karamelova_tragedie.png", popis: "Slaný karamel, banán, mléko." },
-  { nazev: "Medový sen", kategorie: "sladke", cena: 92, img: "/praxee/images/produkty/medovy_sen.png", popis: "Med, vanilka, mandle, mléko." },
-  { nazev: "Láska na první lok", kategorie: "sladke", cena: 95, img: "/praxee/images/produkty/laska_na_prvni_lok.png", popis: "Jahody, bílá čokoláda, smetana." },
+  { nazev: "Sen noci čokoládové", kategorie: "sladke", cena: 95, img: "images/produkty/sen_noci_cokoladove.png", popis: "Čokoláda, smetana, kokos." },
+  { nazev: "Karamelová tragédie", kategorie: "sladke", cena: 95, img: "images/produkty/karamelova_tragedie.png", popis: "Slaný karamel, banán, mléko." },
+  { nazev: "Medový sen", kategorie: "sladke", cena: 92, img: "images/produkty/medovy_sen.png", popis: "Med, vanilka, mandle, mléko." },
+  { nazev: "Láska na první lok", kategorie: "sladke", cena: 95, img: "images/produkty/laska_na_prvni_lok.png", popis: "Jahody, bílá čokoláda, smetana." },
 
   // === HEALTHY & VEGAN – ZDRAVÝ EPILOG ===
-  { nazev: "Veggie Verona", kategorie: "epilog", cena: 89, img: "/praxee/images/produkty/veggie_verona.png", popis: "Špenát, avokádo, jablko, citron." },
-  { nazev: "Bio Bard", kategorie: "epilog", cena: 92, img: "/praxee/images/produkty/bio_bard.png", popis: "Borůvky, mandlové mléko, chia semínka." },
-  { nazev: "Forest Flow", kategorie: "epilog", cena: 89, img: "/praxee/images/produkty/forest_flow.png", popis: "Lesní ovoce, kokosová voda, datle." },
-  { nazev: "Zen Shake", kategorie: "epilog", cena: 99, img: "/praxee/images/produkty/zen_shake.png", popis: "Matcha, kokos, banán, mandlové mléko." }
+  { nazev: "Veggie Verona", kategorie: "epilog", cena: 89, img: "images/produkty/veggie_verona.png", popis: "Špenát, avokádo, jablko, citron." },
+  { nazev: "Bio Bard", kategorie: "epilog", cena: 92, img: "images/produkty/bio_bard.png", popis: "Borůvky, mandlové mléko, chia semínka." },
+  { nazev: "Forest Flow", kategorie: "epilog", cena: 89, img: "images/produkty/forest_flow.png", popis: "Lesní ovoce, kokosová voda, datle." },
+  { nazev: "Zen Shake", kategorie: "epilog", cena: 99, img: "images/produkty/zen_shake.png", popis: "Matcha, kokos, banán, mandlové mléko." }
 ];
 
 
