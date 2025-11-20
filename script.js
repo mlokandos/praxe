@@ -312,6 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
 if (document.getElementById('order-form')) {
   const cart = getCart();
   const summaryList = document.getElementById('summary-items');
+
   const totalEl = document.getElementById('summary-total');
   
   if (!cart.length) {
@@ -322,6 +323,7 @@ if (document.getElementById('order-form')) {
     cart.forEach(item => {
       const li = document.createElement('li');
       li.textContent = `${item.nazev} × ${item.mnozstvi} — ${item.cena * item.mnozstvi} Kč`;
+      
       summaryList.appendChild(li);
       total += item.cena * item.mnozstvi;
     });

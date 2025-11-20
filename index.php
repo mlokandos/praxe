@@ -108,5 +108,4 @@
   <div class="slogan-text">„Každý shake má svůj příběh.“</div>
 </section>
 
-<script src="script.js"></script>
 <?php include "includes/footer.php"; ?>

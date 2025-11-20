@@ -48,11 +48,12 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
   <section class="checkout-summary">
     <h2>🧾 Souhrn objednávky</h2>
     <ul id="summary-items"></ul>
+
     <p class="summary-total">Celkem: <strong id="summary-total">0 Kč</strong></p>
   </section>
 </main>
 
 
-<script src="script.js"></script>
+
 
 <?php include "includes/footer.php" ?>

@@ -100,6 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
   startAutoSlide();
 });
 </script>
-
+<script src="script.js"></script>
 </body>
 </html>
