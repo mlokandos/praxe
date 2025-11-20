@@ -31,7 +31,6 @@
 
   </div>
 </section>
-
 <!-- Mapa -->
 <section class="contact-map">
   <h2>Kde nás najdete</h2>
